@@ -241,7 +241,6 @@ where
 
     loop {
       let len = i.input_len();
-      
       match sep.parse(i.clone()) {
         Err(Err::Error(_)) => return Ok((i, res)),
         Err(e) => return Err(e),
@@ -312,7 +311,6 @@ where
 
     loop {
       let len = i.input_len();
-      
       match sep.parse(i.clone()) {
         Err(Err::Error(_)) => return Ok((i, res)),
         Err(e) => return Err(e),
